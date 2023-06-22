@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Forms</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Inconsolata:wght@600;700;800&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <h1>HTML Form</h1>
+    <form action="#" method="post">
+
+    <div class="title">
+      <label  for="email">Email Address</label>
+    </div>    
+      <input class="form-control" type="email" placeholder="type your Email Address" value="xyz123@email.com" name="email" size="35" required>
+
+   
+    <div class="title">
+      <label  for="fname">Full Name</label>
+    </div>
+      <input class="form-control" type="text" name="fname" placeholder="First Name" required>
+      <input class="form-control" type="text" name="lname" placeholder="Last Name" required>
+
+    <div class="title">
+      <label  for="address">Address</label>
+    </div>
+      <input class="form-control" type="text" name="street" placeholder="Street Address" required>
+      <input class="form-control" type="text" name="add" placeholder="Office,Suite,Apt." required>
+
+    <div class="title">
+      <label  for="city">city</label>
+    </div>
+      <input class="form-control" type="text" name="city" required>
+      <select name="state">
+        <option value="Haryana">Haryana</option>
+        <option value="Dehli">Delhi</option>
+        <option value="Gujrat">Gujrat</option>
+      </select>
+      <input class="form-control" type="number" placeholder="PinCode number" required>
+
+    <div class="title">
+      <label  for="radio-technology">What Kind Of Radio Technology Are You Useing???</label>
+    </div>
+      <input  type="checkbox" name="net-1" value="2G"/> 2G
+      <input  type="checkbox" name="net-2" value="3G"/> 3G
+      <input  type="checkbox" name="net-3" value="4G"/> 4G
+      <input  type="checkbox" name="net-4" value="5G"/> 5G
+
+      <div class="title">
+        <label  for="data-usage">how much data you have used per month???</label>
+      </div>
+      <input  type="radio" name="data" > 1GB
+      <input  type="radio" name="data" > 2GB
+      <input  type="radio" name="data" > 3GB
+      <input  type="radio" name="data" > 4GB
+
+
+    <div class="title">
+      <label  for="subscription">Subscription Duration</label>
+    </div>
+      <input  type="date" name="date">
+      <input  type="month" name="month">
+      <lable for="to">To</lable>
+      <input  type="date" name="date">
+      <input  type="month" name="month">
+
+    <div>
+      <input class="btn" type="reset" name="reset">
+      <input class="btn" type="submit" name="submit">
+    </div>
+    </form>
+  </body>
+</html>
